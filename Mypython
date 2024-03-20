@@ -1,0 +1,935 @@
+Python 
+
+Python Assignment - 1
+
+Program - 1
+Principal = int(input("Enter Principal: "))
+Rate = int(input("Enter Rate of Interest : "))
+year = int(input("Enter Numbers of Year: "))
+print("Principal Amount : RS.", Principal)
+print("Rate of Interest: ", Rate,"%")
+print ("Numbers of Years :", year)
+Simple_Interest = (Principal * Rate * year) /100
+print("Simple Interest : RS. ", Simple_Interest)
+print("Maturity Amount: RS. ", (Principal + Simple_Interest))
+  
+
+
+Program - 2
+square=float (input ("Entet a
+number Of a side square: "）)
+length_rectangle=float (input ("Enter a number length of rectangle: "))
+breadth_rectangle=float (input ("Enter a number breadth of rectangle:"））
+circle=float (input ("Enter a number radius of circle: "））
+
+area_rectangle=length_rectangle + breadth_rectangle
+area_square=square **2
+area_circle=3.14* (circle  **2)
+
+print ("\nArea of Circle: ",area circle)
+print ("Area of Square: ",area square)
+print(Area Of Rectangle",area_rectangle)
+
+
+
+Program - 3
+number1=int (input ("Enter a first number: "))
+number2=int (input ("Enter a Second Number: "))
+number3=int (input ("Enter a Third Number: "))
+
+largest=max (number1, number2, number3)
+
+print ("First Number: ", number1)
+print ("Second Number: ", number2)
+print ("Third Number: ", number3)
+print ("Largest Number: ", largest)
+
+
+
+Program - 4
+rollno=int (input ("ENTER ROLLNO \n") )
+name=input ("ENTER NAME \n")
+marks=[]
+tot=0
+
+fail = 0
+per = 0
+
+for i in range (5) :
+X=int (input ("ENTER MARKS OUT OF 100 *))
+tot=tot+X
+marks.append(x)
+
+for i in range(5) :
+if marks [1]< 35:
+fail +=1
+
+print ("ROLLNO IS ", rollno, "\n")
+print ("NAME IS "name, "\n"）
+print ("TOTAL MARKS IS: ", tot, "\n")
+per = (tot/5)
+print ("PERCENTAGE IS: ", per, "%  \n"）
+if fail !=0 and fail<3 :
+print ("atkt")
+elif fail==0:
+print (" PASS")
+else:
+print ("failed")
+
+if per >=70 :
+print ("Distinction")
+elif per >= 60 and per <70:
+print ("First Class")
+elif per >= 50 and per <60:
+print ("Second Class")
+elif per >= 40 and per <50:
+print("Pass Class")
+else:
+print("failed")
+
+
+
+Program - 5
+p = int (input ("ENTER PRINCIPAL AMOUNT : ") )
+no = float (input ("ENTER NUMBER OF YEAR: ") )
+rate =5
+if no<1:
+rate = 5
+elif no>=1 and no<3:
+rate = 6.5
+elif no>=3 and no<=5:
+rate = 7
+else:
+rate = 6.75
+
+print ("Principal Amount : Rs. ",p)
+si = (p*rate*no) /100
+ma = p* (1+rate*no)
+print ("Rate Of Interest : ", rate, "%")
+print ("Number of Years : ",no)
+print ("Simple Interest : Rs. ", si)
+print ("Maturity Amount : Rs. ", ma)
+
+
+
+Program - 6
+print ("enter three numbers"）
+x=int (input ())
+y=int (input ())
+z=int (input ())
+
+if x>y:
+if x>z:
+print ("LARGEST NUMBER IS X：",x）
+else:
+print ("\nLARGEST NUMBER IS Z：",z）
+else:
+if z<y:
+print ("LARGEST NUMBER IS Y：",y）
+else:
+print ("\nLARGEST NUMBER IS Z：",z）
+
+
+
+Program - 7
+print ("enter three numbers"）
+x=int (input ())
+y=int (input ())
+z=int (input ())
+
+print ("LARGEST NUMBER IS X：",x) if x>z else print ("\nLARGEST NUMBER IS Z：",z）
+
+
+
+Assignment - 2
+
+Program - 1
+Sum = 0
+Total = 0
+while True:
+      Num = int(input("Enter a Number or 0 for exit: "))
+      if Num < 0 :
+           print("Enter Positive number.")
+      elif Num == 0:
+           break
+      else:
+           Sum += Num
+      Total = Total + 1
+print ("")
+print( "The total of the sum is ", Sum)
+print("The total Number is ", Total)
+
+
+
+Program - 2
+SumEven = 0
+SumOdd = 0
+CntEven = 0
+CntOdd = 0
+while True:
+           Num = int(input("Enter a number and 0 for exit : "))
+           if Num < 0 :
+                 print("Enter Postive number.")
+           elif Num == 0:
+                 break
+           elif Num % 2 == 0:
+                 CntEven = CntEven + 1
+                 SumEven = SumEven + Num
+           else:
+                 CntOdd = CntOdd + 1
+                 SumOdd = SumOdd + Num
+print("")
+print("Count the Odd number is = ", CntOdd)
+print (Count the Even numer is = ", CntEven)
+print "Count the Sum of Odd number is =", SumOdd)
+print( "Count the Sum of Even number is =", SumEven)
+
+
+
+Program - 3
+while True:
+           Num = int(input ("Enter a Number and 0 for Exit : "))
+           if Num < 0 :
+                   print("Enter Postive Number.")
+          elif Num == 0 :
+                   break
+           else:
+                   Prime = False
+                   for i in range(2 , Num):
+                         if(Num % i == 0)
+                                Prime = True
+                   if Prime == True:
+                         print ("The Number is Prime")
+                   else:
+                         print("The Number is not Prime")
+
+
+
+Program - 4
+SumEven = 0
+SumOdd = 0
+CntEven = 0
+CntOdd = 0
+while True:
+           N = int(input("Enter a Number and 0 for Exit: "))
+           if N < 0:
+                 print("Enter Postive Number")
+           elif N == 0:
+                 break
+           elif N% 2 == 0:
+                 CntEven = CntEven + 1
+                 SumEven = SumEven + N
+           else:
+                  CntOdd = CntOdd + 1
+                  SumOdd = SumOdd + N
+print("")
+print(f"Count the Sum of {Cntodd} Odd Number is = {SumOdd}")
+print(f"Count the Sum of {CntEven} Even Number is = {SumEven}")
+
+
+
+Program - 5
+SumEven = 0
+SumOdd = 0
+CntEven = 0
+CntOdd = 0
+Total = 0
+Sum = 0
+List1 = []
+while True :
+           Num = int(input("Enter a Number and 0 for Exit: "))
+           if Num < 0 :
+                   print("Enter Postive Number.")
+           elif Num == 0:
+                   break
+           elif Num % 2 == 0:
+                  CntEven = CntEven + 1
+                  SumEven = SumEven + Num
+           else:
+                  CntOdd = CntOdd + 1
+                  SumOdd = SumOdd + Num
+           Total = CntOdd + CntEven
+           Sum = SumOdd + SumEven
+           Average = Sum/Total
+           List1. append (Num)
+print("")
+print(f"1. The Total number is = {Total}")
+print(f"2. The Avegrage is {Average} and Sum is {Sum}")
+print(f"3. The Total Odd number is {Cntodd} and Sum is {SumOdd}")
+print(f"4. The total Even number is {CntEven} and Sum is {SumEven}")
+print(f"5. Largest element is : {max(List1)}")
+print(f"6. Smallest element is : {min(List1)}")
+
+
+
+Program - 6
+Str1 = input("Enter Any String: ")
+Alphabets = Digits = Special = VCount = CCount= 0
+for i in range (len (Str1)):
+            if((Str1[1] >= 'a'and Str1[1] <= 'z') or ( Str1[1] >= 'A' and Str1[1] <= 'Z')):
+            Alphabets = Alphabets + 1
+            if Str1[1] in
+('a', "e", "i", "o", "u", "А", "Е", "I", "O", "U"):
+                   VCount = VCount + 1
+            elif ((Str1[1]>= 'a' and Str1[1] <= 'z') or ( Str1[1] >= 'A' and Str1[1] <= 'Z')):
+                   CCount = CCount + 1
+        elif( Str1[1] >= '0' and  Str1[1] <= '9'):
+               Digits = Digits + 1
+         else:
+               Special = Special + 1
+total = Alphabets + Digits + Special
+print("'')
+print("\n1. Total Number of Elements in this list is: " , total)
+print("\n2. Total Number of Vowels in this list is : " VCount)
+print("\n3. Total Number of Vonsonants in this list is: " , cCount)
+print("\n4. TOtal Number of Numbers in this List is: ", Digits)
+print("\n5. Total Number of Special character other than vowel, constant and Digits: ",Special)
+
+
+
+Program - 7
+My_List = [1, 2.3, 'Chirag', 'Khushi', 'Mini', 'p', [1, 2, 3], 2.8, 9]
+Int_Count = 0
+Float_Count = 0
+Char_Count = 0
+String_Count = 0
+List_Count = 0
+for i in My_List :
+    if isinstance(i, int) :
+        Int_Count += 1
+    elif isinstance(i, float) :
+        Float_Count += 1
+    elif isinstance(i, list) :
+        List_Count += 1
+    elif isinstance(i, str) :
+        if(len(i) == 1) :
+            Char_Count += 1
+        else :
+            String_Count = String_Count + 1
+print("TOtal Numbers of elements : ", len(My_List))
+print("Number of Integers : ",Int_Count)
+print("Number of  Float : ",Float_Count)
+print("Number of  List : ",List_Count)
+print("Number of  Characters : ", Char_Count)
+print("Number of  String : ",String_Count)
+
+
+
+Program - 8
+M = int (input ("Enter the size of the Row : "))
+N = int (input ("Enter the size of the Column : "))
+a, Sum = [], 0
+print ("\n-----Enter the co-efficients of the matrix-----")
+for i in range (M):
+    a.append([])
+    for j in range (N):
+        a[i].append(int (input ()))
+        print (end="\n")
+
+# for printing the matrix in appropirate sequence.................
+for i in range(M):
+    for j in range(N):
+        print(a[i][j], end = " ")
+    print()
+    print (end="\n")
+
+print ("\n-----the total sum of row and coulmn is -----")
+print (end="\n")
+# This statement will compute the
+# sum of the matrix's rows elements
+for i in range (M):
+    for j in range (N):
+        Sum = Sum + a[i][j]
+
+    print ("The Sum of the ", i, " Position row is = ", Sum)
+    Sum = 0
+    print (end="\n")
+    Sum = 0
+
+# This statement will compute the
+# sum of the matrix's columns elements
+for j in range (M):
+    for i in range (N):
+        Sum = Sum + a[i][j]
+
+print ("The Sum of the ", j, " position column is = ", Sum)
+Sum = 0
+
+#FOR diagonal sum of the MATRIX...........
+print (end="\n")
+print ("\n-----the digonal sum of the matrix is : -----")
+print (end="\n")
+L = len(a[0])
+Sum=0
+for i in range(M):
+    Sum += a[i][L-i-1]
+
+print("diagonal elements sum is :", Sum)
+
+#FOR TRANSPOSE sum of the MATRIX...........
+print (end="\n")
+print ("\n-----the transpose of the matrix is : -----")
+print (end="\n")
+def transpose(a, b):
+    for i in range(M):
+        for j in range(N):
+            b[i][j] = a[j][i]
+
+b = a[:][:] # To store result
+transpose(a, b)
+
+print("transpose of the matrix is ")
+for i in range(M):
+    for j in range(N):
+        print(b[i][j], " ", end='')
+    print()
+
+
+
+Program - 9
+print("---------------ENTER THE FIRST MATRIX--------------------")
+X = int (input ("Enter the size of the Row : "))
+Y = int (input ("Enter the size of the Column : "))
+a, Sum = [], 0
+print ("\n-----Enter the co-efficients of the matrix-----")
+for i in range (X):
+    a.append([])
+    for j in range (Y):
+        a[i].append(int (input ()))
+        print (end="\n")
+
+# for printing the matrix in appropirate sequence.................
+for i in range(X):
+    for j in range(Y):
+        print(a[i][j], end = " ")
+    print()
+print (end="\n")
+
+print("---------------- ENTER THE SECOND MATRIX--------------------")
+M = int (input ("Enter the size of the Row : "))
+N = int (input ("Enter the size of the Column : "))
+b, Add = [], 0
+print ("\n-----Enter the co-efficients of the matrix-----")
+for i in range (M):
+    b.append([])
+    for j in range (N):
+        b[i].append(int (input ()))
+    print (end="\n")
+
+# for printing the matrix in appropirate sequence.................
+for i in range(M):
+    for j in range(N):
+        print(b[i][j], end = " ")
+    print()
+print (end="\n")
+
+#Find sum of both the matrices
+print ("\n-----the sum of both the matrices -----")
+print (end="\n")
+result = [[a[i][j] + b[i][j]
+for j in range(len(a[0]))]
+for i in range(len(a))]
+for r in result:
+    print(r)
+
+#Find difference of both the matrices.
+print("\n-----the diffrence of both the matrices -----")
+print (end="\n")
+result = [[a[i][j] - b[i][j]
+for j in range(len(a[0]))]
+for i in range(len(a))]
+for r in result:
+    print(r)
+#Find prodcut of both the matrices.
+print ("\n-----the product of both the matrices -----")
+print (end="\n")
+for i in range(len(a)):
+ # iterating by column by B
+    for j in range(len(b[0])):
+# iterating by rows of B
+        for k in range(len(b)):
+            result[i][j] += a[i][k] * b[k][j]
+for r in result:
+    print(r)
+
+
+
+Assignment - 3
+
+Program - 1
+List = []
+while True :
+    Num = int(input("Enter a Number and 0 for Exit : "))
+    if(Num == 0) :
+        break
+    else :
+        List.append(Num)
+
+def Remove(List) :
+    New_List = []
+    for num in List :
+        if num not in New_List :
+            New_List.append(num)
+    return New_List
+
+Final_List = Remove(List)
+print("Original List", List)
+print("List after Remove Duplicate Items", Final_List)
+
+
+
+Program - 2
+Final_List = []
+Answer = []
+while True :
+    List_Size = int(input("Enter the Number of Sub_List : "))
+    if List_Size == 0 :
+        break
+    else :
+        Sub_List = []
+        for i in range(List_Size) :
+            Num = int(input("Enter Single Number and Press Enter : "))
+            Sub_List.append(Num)
+        Final_List.append(Sub_List)
+        print("\n")
+        
+for listelement in Final_List :
+    Count = len(listelement)
+    Answer.append(Count)
+
+print("list is ", Final_List)
+print(Answer)
+
+
+
+Program - 3
+My_List = []
+while True :
+    Num = int(input("Enter a Number and 0 for Exit : "))
+    if(Num == 0) :
+        break
+    else :
+        My_List.append(Num)
+Odd = []
+Even = []
+for i in My_List :
+    if(i % 2 == 0) :
+        Even.append(i)
+    else :
+        Odd.append(i)
+Odd_Tuple = tuple(Odd)
+Even_Tuple = tuple(Even)
+print(My_List)
+print(Odd_Tuple)
+print(Even_Tuple)
+
+
+
+Program - 4
+My_List = []
+Int_List = []
+String_List = []
+Float_List = []
+while True :
+    Data = input("Enter a Value and 0 for Exit : ")    
+    if (Data == '0') :
+        break
+    else :
+        if Data.isdigit() :
+            My_List.append(int(Data))
+        elif '.' in Data :
+            try :
+                My_List.append(float(Data))
+            except :
+                My_List.append(Data)
+        else :
+            My_List.append(Data)
+for i in My_List :
+    if isinstance(i, int) :
+        Int_List.append(i)
+    elif isinstance(i, float) :
+        Float_List.append(i)
+    else :
+        String_List.append(i)
+print(My_List)
+print(Int_List)
+print(String_List)
+print(Float_List)
+
+
+
+Program - 5
+Student = {}
+while True :
+    Roll_no = int(input("Enter Roll_No or 0 for Exit : "))
+    if Roll_no == 0 :
+        break
+    else :
+        Temp_List = []
+        Math = int(input("Enter Mathematics subject mark : "))
+        Temp_List.append(Math)
+        Eng = int(input("Enter English Subject mark : "))
+        Temp_List.append(Eng)
+        Com = int(input("Enter Computer Subject Mark : "))
+        Temp_List.append(Com)
+        Student[Roll_no] = Temp_List
+        print("\n")
+
+print("Roll No.  Math   Eng   Com   Total")
+for i in Student :
+    Temp_List1 = []
+    total = 0
+    Temp_List1.append(i)
+    for j in Student[i] :
+        Temp_List1.append(j)
+        total = total + j
+    print(Temp_List1[0], "       ", Temp_List1[1], "   ", Temp_List1[2], "  ", Temp_List1[3], "  ", total)
+
+
+
+Program - 6
+Data = input("Enter String : ")
+Frequency = {}
+for i in Data :     #Count frequency word by word
+    if i in Frequency :
+        Frequency[i] += 1
+    else :
+        Frequency[i] = 1
+print(str(Frequency))
+
+
+
+Program - 7
+def Count_Frequency(list) :
+    freg = {}
+    for items in list :
+        freg[items] = list.count(items)     
+    print(freg)
+
+My_List = []
+while True :
+    Data = input("Enter a string and 0 for Exit : ")
+    if Data == "0" :
+        break
+    else :
+        My_List.append(Data)
+Count_Frequency(My_List)
+
+
+
+Program - 8
+Input_List = []
+Output_List = {}
+while True :     #Taking input from user
+    Data = input("Enter a String or 0 for Exit : ")
+    if Data == '0' :
+        break
+    else :
+        Input_List.append(Data)
+x = len(Input_List)
+for i in range(x) :
+    Output_List[Input_List[i]] = len(Input_List[i])
+print("List : ", Input_List)
+print("Output : ", Output_List)
+
+
+
+Program - 9
+English_Dutch = {"last" : "laatst", "week" : "week", "the" : "de", "royal" : "koninklijk",
+"festival" : "feest", "hall" : "hal", "saw" : "zaag", "first" : "eerst", "performance" : "optreden",
+"of" : "van", "a" : "een", "new" : "nieuw", "symphony" : "symphonie", "by" : "bij", "one" : "een",
+"world" : "wereld", "leading" : "leidend", "modern" : "modern", "composer" : "componist",
+"composers" : "componisten", "two" : "twee", "shed" : "schuur", "sheds" : "schuren" }
+
+while True :
+    Data = str(input("Enter a String or 0 for Exit : "))
+    if Data == '0' :
+        break
+    else :
+        if Data in English_Dutch :
+            Answer = English_Dutch[Data]
+            print(Answer)
+        else :
+            print("Value not found")
+
+
+
+Program - 10
+Movies = ["Where Eagle's Dare", "Enter the Dragon", "Iron Fist", "Fist of Fury"]
+dare_rating = [9, 10, 9.5, 8.5, 3, 7.5, 8]
+dragon_rating = [10, 10, 0, 9, 1, 8, 7.5, 8, 6, 9]
+fist_rating = [7, 6, 5]
+fury_rating = [6, 5, 6, 6]
+my_dictionary = {}
+my_dictionary.update({Movies[0] : dare_rating})
+my_dictionary.update({Movies[1] : dragon_rating})
+my_dictionary.update({Movies[2] : fist_rating})
+my_dictionary.update({Movies[3] : fury_rating})
+for i in my_dictionary :
+    temp_list = []
+    rating = 0
+    for j in my_dictionary[i] :
+        temp_list.append(j)
+        rating = sum(temp_list) / len(temp_list)
+    print("Average ratings of the movie", '"', i, '" is', '%.1f'%rating)
+
+
+
+Assignment - 4
+
+Program - 1
+while True :
+    Num = int(input("Enter number or 0 for Exit : "))
+    if Num == 0 :
+        break
+    else : 
+        ASS04_01 = open("ASS04_01.txt", "a")
+        String = str(Num)
+        ASS04_01.write(String)
+        ASS04_01.write("\n")
+        ASS04_01.close()
+        
+ASS04_01 = open("ASS04_01.txt", "r")
+print(ASS04_01.read())
+ASS04_01.close()
+
+
+
+Program - 2
+while True :
+    Data = input("Enter String or 0 for Exit : ")
+    if Data == "0" :
+        break
+    else :
+        ASS04_02 = open("ASS04_02.txt", "a")
+        ASS04_02.write(Data + "\n")
+        ASS04_02.close()
+
+ASS04_02 = open("ASS04_02.txt", "r")
+print("----------Print Entire file----------")
+print(ASS04_02.read())
+ASS04_02.close()
+
+ASS04_02 = open("ASS04_02.txt", "r")
+Data1 = int(input("Give number how many lines print from the start : "))
+print("----------1st n lines of the file----------")
+for i in range(Data1) :
+    print(ASS04_02.readline().rstrip())
+
+Data2 = int(input("\nGive number how many lines print from n'th line : "))
+print("----------m lines starting from the n'th line----------")
+Count = 0
+for i in range(Data1, Data2):
+    if Data2 <= Count or Data2 >= Data1 :
+        print(ASS04_02.readline().rstrip())
+    else:
+        ASS04_02.readline()
+        Count = Count + 1
+ASS04_02.close()
+
+ASS04_02 = open("ASS04_02.txt", "r")
+Count = 1
+print("\n----------Number of words in each line----------")
+for i in ASS04_02 :
+    Data3 = len(list(i.strip().split()))
+    print(Count, ") Lines In Number Of Words :- ",Data3)
+    Count += 1
+ASS04_02.close()
+
+
+
+Program - 3
+Odd = open("ASS04_03_Odd.txt", "w")
+Even = open("ASS04_03_Even.txt", "w")
+
+while True :
+    Num = int(input("Enter Number or 0 for Exit : "))
+    if Num == 0 :
+        break
+    else :
+        if Num % 2 == 0 :
+            Even.write(str(Num) + "\n")
+        else :
+            Odd.write(str(Num) + "\n")
+Odd.close()
+Even.close()
+
+Odd = open("ASS04_03_Odd.txt", "r")
+print("----------Odd Numbers----------")
+print(Odd.read())
+Odd.close()
+
+Even = open("ASS04_03_Even.txt", "r")
+print("----------Even Numbers----------")
+print(Even.read())
+Even.close()
+
+
+
+Program - 4
+My_List = []
+while True :
+    Num = input("Enter value : ")
+    if (Num == '0') :
+        break
+    else :
+        if Num.isdigit() :
+            My_List.append(int(Num))
+        elif '.' in Num :
+            try :
+                My_List.append(float(Num))
+            except :
+                My_List.append(Num)
+        else :
+            My_List.append(Num)
+        
+ASS04_04 = open("ASS04_04.txt", "w")
+for i in My_List :
+    tmp = str(i)
+    ASS04_04.write(tmp)
+    ASS04_04.write("\n")
+ASS04_04.close()
+
+Int_List = []
+String_List = []
+Float_List = []
+for i in My_List :
+    if isinstance(i, int) :
+        Int_List.append(i)
+    elif isinstance(i, float) :
+        Float_List.append(i)
+    else :
+        String_List.append(i)
+
+ASS04_04_Int = open("ASS04_04_Int.txt", "w")
+for i in Int_List :
+    ASS04_04_Int.write(str(i) + "\n")
+ASS04_04_Int.close()
+
+ASS04_04_String = open("ASS04_04_String.txt", "w")
+for i in String_List :
+    ASS04_04_String.write(str(i) + "\n")
+ASS04_04_String.close()
+
+ASS04_04_Float = open("ASS04_04_Float.txt", "w")
+for i in Float_List :
+    ASS04_04_Float.write(str(i) + "\n")
+ASS04_04_Float.close()
+
+ass04 = open("ASS04_04.txt", "r")
+print("\n----------All Values----------")
+print(ass04.read())
+ass04.close()
+
+inttxt = open("ASS04_04_Int.txt", "r")
+print("----------Int values----------")
+print(inttxt.read())
+inttxt.close()
+
+strtxt = open("ASS04_04_String.txt", "r")
+print("----------String values----------")
+print(strtxt.read())
+strtxt.close()
+
+floattxt = open("ASS04_04_Float.txt", "r")
+print("----------Float values----------")
+print(floattxt.read())
+floattxt.close()
+
+
+
+Program - 5
+ASS04_05 = open("ASS04_05.txt", "a")
+Student = {}
+while True :
+    Roll_no = int(input("Enter Roll_No or 0 for Exit : "))
+    if Roll_no == 0 :
+        break
+    else :
+        Total = 0
+        ASS04_05.write(str(Roll_no) + "         ")
+        Temp_List = []
+
+        Math = int(input("Enter Mathematics subject mark : "))
+        ASS04_05.write(str(Math) + "     ")
+        Temp_List.append(Math)
+        Total = Total + Math
+
+        Eng = int(input("Enter English Subject mark : "))
+        ASS04_05.write(str(Eng) + "    ")
+        Temp_List.append(Eng)
+        Total = Total + Eng
+
+        Com = int(input("Enter Computer Subject Mark : "))
+        ASS04_05.write(str(Com) + "    ")
+        Temp_List.append(Com)
+        Total = Total + Com
+
+        ASS04_05.write(str(Total) + "\n")
+
+        Student[Roll_no] = Temp_List
+        print("\n")
+ASS04_05.close()
+
+ASS04_05 = open("ASS04_05.txt", "r")
+print(ASS04_05.read())
+ASS04_05.close()
+
+
+
+Program - 6
+def Count_Freg(List) :
+    Freg = {}
+    for items in List :
+        Freg[items] = List.count(items)     
+    print(Freg)
+
+while True :
+    Data = input("Enter a string and 0 for Exit : ")
+    if Data == "0" :
+        break
+    else :
+        ASS04_06 = open("ASS04_06.txt", "a")
+        ASS04_06.write(Data + "\n")
+        ASS04_06.close()
+
+List = []
+ASS04_06 = open("ASS04_06.txt", "r")
+for i in ASS04_06 :
+    current_place = i[:-1]
+    List.append(current_place)
+
+print(List, "\n")
+Count_Freg(List)
+ASS04_06.close()
+
+
+
+Program - 7
+while True :
+    ASS04_07 = open("ASS04_07.txt", "a")
+    Data = input("Enter a String or 0 for Exit : ")
+    if Data == '0' :
+        break
+    else :
+        ASS04_07.write(Data + "\n")
+    ASS04_07.close()
+
+ASS04_07 = open("ASS04_07.txt", "r")
+print(ASS04_07.read())
+ASS04_07.close()
+
+ASS04_07 = open("ASS04_07.txt", "r")
+Word = input("Enter word you want to search : ")
+c = 0
+
+for i in ASS04_07:
+    Count = 0
+    for j in list(i.rstrip().split()):
+        if Word == j:
+            Count = Count + 1
+            words = i
+    c = c + 1
+    if Count != 0:
+        print(words ,"frequency is", Count, " the '", Word, "' in that line (", c,")")
+ASS04_07.close()
